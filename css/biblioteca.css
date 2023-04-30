@@ -148,7 +148,7 @@ top: 23%;
 bottom: 0%;
 box-shadow: 7px 7px 4px 2px #00000080;
 border-radius: 5px;
-background: url(../img/csgo.jpg);
+background: url(../img/gtasa.png);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -212,6 +212,7 @@ font-size: 1rem;
 bottom: 0%;
 }
 
+
 .ponto1, .ponto2, .ponto3, .ponto4, .ponto5{
     position: absolute;
     color: #fff;
@@ -231,7 +232,7 @@ letter-spacing: 5px;
     transform: rotate(90deg);
     left: 90%;
 }
-
+ 
 footer{
     position: fixed;
     bottom: 0;
@@ -273,22 +274,58 @@ footer .fa-gamepad{
     align-items: center;
 }
 
-.epic{
-    position: absolute;
-left: 83%;
-
-
-bottom: 0%;
-border: 1px solid #E6F5FF;
-background: #E6F5FF;
-border-radius: 10px 0 0 0;
+.fa-xbox, .fa-playstation, .fa-nintendo-switch, .fa-square-steam{
+    font-size: 1.8rem;
+    color: #fff;
+    padding-left: 4px;
+    padding-top: 5px;
+    margin-left: 10px;
 }
 
-.fa-square-steam{
-    color: #E6F5FF;
-    left: 83%;
+span.xbox, .steam, .nintendo{
+    font-size: 1.4rem;
+    padding: 7px;
+    gap: 10px;
+}
+
+
+
+.retangulo{
+position: absolute;
+left: 0%;
+right: 55%;
+
+background: #000000;
+border-radius: 5px 0px 20px;
+
+}
+
+
+.retangulo2{
     position: absolute;
-    bottom: 0%;
-    font-size: 3.4rem;
+left: 0%;
+right: 52%;
+margin-bottom: 20%;
+background: #ffffff;
+border-radius: 5px 0px 20px;
+}
+
+.epic, .nintendo-logo{
+    width: 28px;
+    color: #fff;
+    padding-left: 4px;
+    padding-top: 5px;
+    margin-left: 10px;  
+}
+
+.epic-games{
+    font-weight: bolder;
+    padding: 2px;
+}
+
+.nintendo{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: 2px;
 }
 
