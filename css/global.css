@@ -1,0 +1,8 @@
+:root{
+    --bodybg--:#1A202C;
+    --headerbg--:#E6F5FF;
+    --fontcolor--:#FFFFFF;
+    --shadow--: 5px 5px 10px rgba(0, 0, 0, 0.35);
+    --btncolor--: #3D3D3D;;
+    --btnhover--: #777777;
+}
