@@ -1,16 +1,3 @@
-const menuBtn = document.querySelector('.menu');
-const menuContainer = document.querySelector('.menu-container');
-
-let menuOpen = false;
-
-menuBtn.addEventListener('click', () => {
-  if (!menuOpen) {
-    menuBtn.classList.add('open');
-    menuContainer.style.left = '0';
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove('open');
-    menuContainer.style.left = '-300px';
-    menuOpen = false;
-  }
-});
+const btnExpandir = document.querySelector('.btn-expandir');const menuLateral = document.querySelector('.menu-lateral');const menu = document.querySelector('.menu');btnExpandir.addEventListener('click', () => {menuLateral.classList.toggle('active');menu.classList.toggle('active');});
+document.addEventListener('click', (event) => {const isClickInside = menuLateral.contains(event.target) || btnExpandir.contains(event.target);
+if (!isClickInside) {menuLateral.classList.remove('active');menu.classList.remove('active');}});

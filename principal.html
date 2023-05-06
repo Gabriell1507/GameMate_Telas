@@ -6,54 +6,48 @@
     <meta name="description" content="Principal do GameMate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7782716487.js" crossorigin="anonymous"></script>
-     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link rel="stylesheet" href="css/principal.css">
     <link rel="stylesheet" href="css/global.css">
     <title>Tela Principal</title>
 </head>
 <body>
     <header>
-        <div class="menu"><i class="fa-solid fa-bars" id="menu-icon" aria-hidden="true"></i></div>
-        <div class="logo">
-            <img src="img/Free_Sample_By_Wix.jpg" alt="logo">
+        <div class="btn-expandir">
+            <i class="fa-solid fa-bars" id="menu-icon" aria-hidden="true"></i>
         </div>
-        <div class="lupa"><i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true"></i></div>
-    </header>
+        <div class="btn-fechar"></div>
+        <nav class="menu-lateral">
+            
+
+            <ul class="menu">
+                <li class="item"><a href="principal.html"><span class="icon"><i class="fa-solid fa-home" aria-hidden="true"></i></span>
+                <span class="text-link">Principal</span>
+                </a>
+            </li>
+                <li class="item"><a href="perfil.html"><span class="icon"><i class="fa-solid fa-user" aria-hidden="true"></i></span>
+                <span class="text-link">Perfil</span>
+
+                <li class="item"><a href="biblioteca.html"><span class="icon"><i class="fa-solid fa-book" aria-hidden="true"></i></span>
+                <span class="text-link">Biblioteca</span>
+            </ul>   
+
+            
+        </nav>
+        <div class="logo">
+            <img src="img/logo-no-background.png" alt="logo">
+        </div>
+        <div class="lupa">
+            <i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true"></i>
+            </div>
+        </header>
 
     <main>
-        <div class="user-logo">
-            <img src="img/konosuba-bakuen-nova-destacada.webp" alt="logo">
-            <div class="user-infos">
-                <h2 class="username">Gotenks777</h2>
-                <h2 class="id_user">#0001</h2>
-                <i class="fa-solid fa-id-badge"></i>
-            </div>
-
-                <h2 class="recomendados">Recomendados</h2>
-                <div class="elipse"><i class="fa-regular fa-plus"></i></div>
-                <div class="capa1"></div>
-                <div class="capa2"></div>
-                <div class="capa3"></div>
-                <div class="capa4"></div>
-                
-                <i class="fa-sharp fa-solid fa-angles-left"></i>
-                <i class="fa-sharp fa-solid fa-angles-right"></i>
-
-                <h2 class="mygames">Meus Jogos</h2>
-                <div class="capa5"></div>
-                <div class="capa6"></div>
-                <div class="capa7"></div>
-                <div class="capa8"></div>
-            
-                <i class="fa-regular fa-chevrons-left"></i>
-                <i class="fa-regular fa-chevrons-right"></i>
-                
+        <div class="container">
+            <h2>Meus Jogos</h2>
+            <div class="game-covers"></div>
+            <div class="game-titles"></div>
+        </div>
     </main>
-
-    <footer>
-        <a href="https://gabriell1507.github.io/Telas-GameMate/Tela%20Principal/principal.html"><i class="fa-sharp fa-solid fa-house"></i></a>
-        <a href="https://gabriell1507.github.io/GameMate_Telas/biblioteca.html"><i class="fa-sharp fa-solid fa-gamepad"></i></a>
-    </footer>
     <script src="js/principal.js"></script>
 </body>
 </html>

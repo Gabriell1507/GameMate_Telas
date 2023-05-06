@@ -1,31 +1,21 @@
-const menuBtn = document.querySelector('.menu');
-const menuContainer = document.querySelector('.menu-container');
+const btnExpandir = document.querySelector('.btn-expandir');
+         const menuLateral = document.querySelector('.menu-lateral');
+            const menu = document.querySelector('.menu');
 
-let menuOpen = false;
+            btnExpandir.addEventListener('click', () => {
+                menuLateral.classList.toggle('active');
+                menu.classList.toggle('active');
+            });
 
-menuBtn.addEventListener('click', () => {
-  if (!menuOpen) {
-    menuBtn.classList.add('open');
-    menuContainer.style.left = '0';
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove('open');
-    menuContainer.style.left = '-300px';
-    menuOpen = false;
-  }
-});
 
-document.addEventListener('click', (event) => {
-    const isClickInside = menuContainer.contains(event.target) || menuBtn.contains(event.target);
-  
-    if (!isClickInside && menuOpen) {
-      menuBtn.classList.remove('open');
-      menuContainer.style.left = '-300px';
-      menuOpen = false;
+            document.addEventListener('click', (event) => {
+    const isClickInside = menuLateral.contains(event.target) || btnExpandir.contains(event.target);
+
+    if (!isClickInside) {
+        menuLateral.classList.remove('active');
+        menu.classList.remove('active');
+        
     }
-  });
-
-  const identificador = document.querySelector('.id-user span.id');
-  function copiar() {
-      navigator.clipboard.writeText(identificador.textContent);
-  }
+    
+    
+});

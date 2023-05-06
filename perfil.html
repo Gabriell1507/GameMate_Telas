@@ -11,40 +11,66 @@
 </head>
 <body>
     <header>
-        <div class="menu"><i class="fa-solid fa-bars" id="menu-icon" aria-hidden="true"></i>
-            <div class="menu-container">
-                <ul class="menu-options">
-                  <li><a href="#">Opção 1</a></li>
-                  <li><a href="#">Opção 2</a></li>
-                  <li><a href="#">Opção 3</a></li>
-                </ul>
-              </div>
+        <div class="btn-expandir">
+            <i class="fa-solid fa-bars" id="menu-icon" aria-hidden="true"></i>
         </div>
-        <div class="logo">
+        <div class="btn-fechar"></div>
+        <nav class="menu-lateral">
             
+
+            <ul class="menu">
+                <li class="item"><a href="principal.html"><span class="icon"><i class="fa-solid fa-home" aria-hidden="true"></i></span>
+                <span class="text-link">Principal</span>
+                </a>
+            </li>
+                <li class="item"><a href="perfil.html"><span class="icon"><i class="fa-solid fa-user" aria-hidden="true"></i></span>
+                <span class="text-link">Perfil</span>
+
+                <li class="item"><a href="principal.html"><span class="icon"><i class="fa-solid fa-book" aria-hidden="true"></i></span>
+                <span class="text-link">Biblioteca</span>
+            </ul>   
+
+            
+        </nav>
+        
+        <div class="logo">
+            <img src="img/logo-no-background.png" alt="logo">
         </div>
-        <div class="input-wrapper">
-            <button class="lupa"><i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true" onclick="abrir()"></i></button>
-            <input placeholder="Pesquisar" type="text" class="input">
-        </div>
+        <div class="lupa">
+            <i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true"></i>
+            </div>
+            
+
     </header>
 
-    <main>
-        <div class="container">
-            <div class="perfil">
-                <div class="foto">
-                    <img class="logo" src="img/images.jpg" alt="Foto de perfil">
-                </div>
-                <div class="nome">
-                    <h1>Gotenks777</h1>
-                </div>
-                <div class="id-user">
-                    <p><span>Id:</span> <span class="id">#0001</span><i class="fas fa-copy" onclick="copiar()"></i></p>
-                </div>
-            
-            </div>
-        </div>
-    </main>
-    <script src="js/perfil.js"></script>    
+   
+    <script src="js/perfil.js"></script>
+    <script>
+       
+       const btnExpandir = document.querySelector('.btn-expandir');
+         const menuLateral = document.querySelector('.menu-lateral');
+            const menu = document.querySelector('.menu');
+
+            btnExpandir.addEventListener('click', () => {
+                menuLateral.classList.toggle('active');
+                menu.classList.toggle('active');
+            });
+
+
+            document.addEventListener('click', (event) => {
+    const isClickInside = menuLateral.contains(event.target) || btnExpandir.contains(event.target);
+
+    if (!isClickInside) {
+        menuLateral.classList.remove('active');
+        menu.classList.remove('active');
+        
+    }
+    
+    
+});
+
+
+    </script>
+
 </body>
 </html>
