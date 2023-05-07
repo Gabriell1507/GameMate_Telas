@@ -32,11 +32,6 @@
                 <span class="text-link">Biblioteca</span>
                 </a>
             </li>
-
-                    <span>Doações</span></li>
-                    <h2>Doe pela chave PIX abaixo caso goste do projeto:
-                        17de2b4c-4fac-4a65-96d4-f13b64473c47    
-                    </h2>
             </ul>   
 
             
@@ -53,55 +48,31 @@
     </header>
 
    <main>
-    <div class="container">
+    
+
+    <div class="card">
         <div class="user-logo">
-            <img class="foto-usuario" src="img/images.jpg" alt="">
+            <img class="foto-usuario" src="img/profile.jpg" alt="">
         </div>
 
-        <div class="user-infos">
+        <div class="user-info">
             <h2 class="user_infos">
-                Nome: <span class="nome-usuario">Gotenks</span>
+                <span class="nome-usuario">Gotenks</span>
             </h2>
 
-            <h2 class="user_infos">
-                E-mail: <span class="email-usuario">teste@teste.com</span>
-            </h2>
+            <p class="user_infos">
+                <span class="email-usuario">teste@teste.com</span>
+            </p>
 
-            <h2 class="user_infos">
-                Id: <span class="id-usuario">#0001</span>
-            </h2>
+            <p class="user_infos">
+                <span class="id-usuario">Id:</span class="id">#0001 <i class="fa-regular fa-copy"  onclick="copiarTexto()"></i>
+            </p>
         
         </div>
     </div>
 
    </main>
     <script src="js/perfil.js"></script>
-    <script>
-       
-       const btnExpandir = document.querySelector('.btn-expandir');
-         const menuLateral = document.querySelector('.menu-lateral');
-            const menu = document.querySelector('.menu');
-
-            btnExpandir.addEventListener('click', () => {
-                menuLateral.classList.toggle('active');
-                menu.classList.toggle('active');
-            });
-
-
-            document.addEventListener('click', (event) => {
-    const isClickInside = menuLateral.contains(event.target) || btnExpandir.contains(event.target);
-
-    if (!isClickInside) {
-        menuLateral.classList.remove('active');
-        menu.classList.remove('active');
-        
-    }
-    
-    
-});
-
-
-    </script>
 
 </body>
 </html>
