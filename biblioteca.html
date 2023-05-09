@@ -26,20 +26,28 @@
             </li>
                 <li class="item"><a href="perfil.html"><span class="icon"><i class="fa-solid fa-user" aria-hidden="true"></i></span>
                 <span class="text-link">Perfil</span>
+                </a>
+            </li>
 
                 <li class="item"><a href="biblioteca.html"><span class="icon"><i class="fa-solid fa-book" aria-hidden="true"></i></span>
                 <span class="text-link">Biblioteca</span>
+                </a>
+            </li>
             </ul>   
 
             
         </nav>
+        
         <div class="logo">
             <img src="img/logo-no-background.png" alt="logo">
         </div>
         <div class="lupa">
-            <i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true"></i>
+            <i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true"  onclick="toggleSearch()"></i>
+            <input type="text" id="searchInput" placeholder="Buscar...">
             </div>
-        </header>
+            
+
+    </header>
 
 
     <main>
@@ -102,5 +110,16 @@
         <a href="https://gabriell1507.github.io/GameMate_Telas/biblioteca.html"><i class="fa-sharp fa-solid fa-gamepad"></i></a>
     </footer>
     <script src="js/biblioteca.js"></script>
+    <script>
+        function toggleSearch(){
+            let searchInput = document.getElementById("searchInput");
+            if(searchInput.style.display == "none"){
+                searchInput.style.display = "block";
+            }else{
+                searchInput.style.display = "none";
+            }
+        }
+    </script>
+        
 </body>
 </html>
