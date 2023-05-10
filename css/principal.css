@@ -97,6 +97,7 @@ ul li.item:hover a{
 header .logo{
     position: absolute;
     top: 0;
+    padding: 10px;
     left: 50%;
     width: 300px;
     height: 75px;
@@ -170,3 +171,108 @@ h2{
   }
 }
 
+body{
+    width: 100%;
+    height: 100vh;
+    background: #1A202C;
+  }
+  #game-carousel {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .carousel-container {
+    position: relative;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 20px;
+  }
+  
+  .game-cover {
+    flex-shrink: 0;
+    width: 350px;
+    height: 350px;
+    margin-right: 20px;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .carousel-control-prev {
+    left: 20px;
+  }
+  
+  .carousel-control-next {
+    right: 20px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .game-cover {
+      width: 200px;
+      height: 225px;
+    }
+  }
+  
+  .col-12 {
+    padding: 0;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+  }
+  
+  h2{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 28vh;
+    font-size: 0.8rem;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+  
+    background-image: none;
+    border-radius: 50%;
+    opacity: 0.8;
+  }
+  
+  .carousel-control-prev-icon {
+    margin-left: -15px;
+  }
+  
+  .carousel-control-next-icon {
+    margin-right: -15px;
+  }
+  
+  .carousel-control-prev-icon:before,
+  .carousel-control-next-icon:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #fcfcfc;
+    border-left: 3px solid #f8f8f8;
+    transform: rotate(-45deg);
+    margin-top: 10px;
+  }
+  
+  .carousel-control-next-icon:before {
+    transform: rotate(135deg);
+  }
+  
