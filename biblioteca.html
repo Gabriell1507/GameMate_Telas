@@ -42,9 +42,10 @@
             <img src="img/logo-no-background.png" alt="logo">
         </div>
         <div class="lupa">
-            <i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true"  onclick="toggleSearch()"></i>
-            <input type="text" id="searchInput" placeholder="Buscar...">
-            </div>
+            <i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true" onclick="toggleSearch()"></i>
+            <input type="text" id="searchInput" placeholder="Buscar..." onkeypress="handleKeyPress(event)">
+          </div>
+          
             
 
     </header>
